@@ -1,0 +1,1237 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*for all*/
+/* fonts */
+p {
+  line-height: 3.3vh;
+}
+
+/* color */
+h1, .bottom_half_header em, h2.header, li a, .footer-list, .drop_button, .home_button, .home_button a  {
+  color: white;
+  font-weight: bold;
+}
+
+/* headings */
+h1 {
+  font-size: 2em;
+  padding-bottom: 5vh;
+}
+
+h2 {
+  padding: 0 1vw;
+}
+
+h3, h4, h5, #main-menu-dropdown, #page-header, #page-footer, .more_information p, form#reservation_dates_guests_step_1 label, form#reservation_dates_guests_step_1 legend, form#reservation_rooms_guests_step_2 label, form#reservation_rooms_guests_step_2 legend, #reservation_step_1 .submit_button_reservation_step_1 a, #reservation_step_2 .submit_button_reservation_step_2 a {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 1.5em;
+}
+
+/* get rid of extra border from fieldset*/
+fieldset {
+  border: 0 none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.current {
+  text-decoration: overline;
+} 
+
+/*==============================================*/
+/*HEADER PART*/
+/*for logos*/
+.bottom_half_header em {
+  font-size: 8vw;
+  padding: 4vh;
+}
+
+em {
+  font-style: normal;
+}
+
+#main-menu-dropdown, #page-header, #page-footer {
+  font-size: 0.8em;
+}
+
+nav li, footer li, header .booking, h2.header {
+  list-style: none;
+  font-weight: bolder;
+  padding: 2vh 2vw;
+}
+
+li a, h2, h3, h4, .booking {
+  text-align: center;
+}
+
+article h3 {
+  padding-bottom: 1vh;
+}
+
+/*FOOTER PART also*/
+/* #page-header .dropdown-list bottom here */
+.footer-list, .dropdown-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+#main-menu-dropdown {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#page-header .dropdown-list, .footer-list, .booking, .drop_button, .home_button, #main-menu-dropdown, .js #hamburger_dropdown.show, .booking a, .services h3, .more_info h3, .contact-us h3, #activities_only::-webkit-scrollbar-track, #rooms_only::-webkit-scrollbar-track, .more_information, #rooms_only h4, #activities_only h4, form#reservation_dates_guests_step_1 legend, form#reservation_rooms_guests_step_2 legend, #reservation_step_1 .submit_button_reservation_step_1 a, #reservation_step_2 .submit_button_reservation_step_2 a, #reservation_date_occupancy .submit_button_reservation_start a, 
+#reservation_date_occupancy h3  {
+  background-color: #1c250c;
+}
+
+.drop_button, .home_button {
+  border: #1c250c;
+  transition: 0.3s ease-in;
+}
+
+/* if javascript is not working */
+.drop_button, .home_button {
+  display: none;
+}
+
+.js .drop_button, .js .home_button {
+  display: inline-block;
+  cursor: pointer;
+  padding: 1vh;
+  margin: 1vh;
+}
+
+/* to move home button to the most right */
+.js .home_button {
+  position: absolute;
+  right: 0;
+}
+
+.drop_button:hover, .drop_button:focus, .home_button:hover, .home_button:focus, #hamburger_dropdown a:hover, #hamburger_dropdown a:focus, #page-footer a:hover, #page-footer a:focus, header .booking a:hover, header .booking a:focus, .more_information:hover, .home_button a:hover {
+  background-color: #475429;
+  border-radius: 0.1em;
+  color: black;
+}
+
+/* links to pages - the content of dorpdown menu will be hidden */
+/* will only happen if Javascript works */
+.js .dropdown-list {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.js #hamburger_dropdown.show a {
+  display: block;
+}
+
+/* shows dropdown menu - javascript will add class to #hamburger_dropdown container when user clicks dropdown button */
+.js #hamburger_dropdown.show {
+  display: block;
+  width: 30%;
+}
+
+#page-header .bottom_half_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  /*controls the height of the background image*/
+  height: 58vh;
+}
+
+/*for HOME page*/
+#page-header #home_background {
+  background-image: url(../images/volcano-home-background.jpg);
+}
+
+/*for FIND US page*/
+#page-header #find_us_background {
+  background-image: url(../images/volcano-find-us-background.jpg);
+}
+
+/*for ABOUT US page*/
+#page-header #about_us_background {
+  background-image: url(../images/volcano-about-us-background.jpg);
+}
+
+/*for ROOMS & ACTIVITIES page*/
+#page-header #rooms_activities_background {
+  background-image: url(../images/volcano-activities-rooms-background.jpg);
+}
+
+/* ensure reservation looks more like a button */
+.booking a {
+  color: white;
+  padding: 5vh;
+  border-radius: 1em;
+  font-weight: 900;
+  border: 1px solid white;
+  transition: 0.8s linear;
+}
+
+/* styling for dropdown menu menu links to other */
+#main-menu-dropdown a, #page-footer a {
+  padding: 1vh 1vw;
+  transition: 0.3s ease-in;
+}
+
+.js #main-menu-dropdown li:not(:last-child) {
+  border-bottom: 1px solid white;
+}
+
+.js nav li {
+  margin: 0 2vw;
+}
+
+/*Below is for HOMEPAGE.html*/
+/*==============================================*/
+/*MAIN PART*/
+
+p, #points_direction li, button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  text-align: left;
+}
+
+/*GENERAL SPACING AND MARGIN FOR ALL SECTIONS IN MAIN*/
+main#homepage article, main#find_us article, main #form, #rooms_activities #rooms_activities article.things_we_have, .explore_activities_details, main#about_us_history article, main#activities_only_home article, main#find_us_only article {
+  margin: 8vh 10vw;
+  padding: 6vh 0;
+}
+
+/*WHO_WE_ARE section from HOMEPAGE.html and DIRECTIONS section from FIND_US.html*/
+.who_we_are, .finding_us, main #find_us article, #the_present article, #rooms_activities article.things_we_have, #homepage article {
+  border-top: 5px double black;
+  border-bottom: 5px double black;
+}
+
+/*SERVICES section for headers and background image*/
+.services h3, .messages h3, .more_info h3 {
+  display: inline-block;
+  border-radius: 0.1em;
+  position: absolute;
+  padding: 1vh 4vw;
+}
+
+.services h3, .more_info h3 {
+  color: white;
+  bottom: 7vh;
+}
+
+.messages h3 {
+  background-color: #aadaff;
+  border: 5px solid black;
+  color: black;
+}
+
+.contact-us h3 {
+  display: inline-block;
+  font-weight: 900;
+  border-radius: 0.1em;
+  border: 5px solid black;
+  padding: 1vh 4vw;
+  color: white;
+  position: absolute;
+  bottom: 7vh;
+  left: 32.5vw;
+}
+
+.services .activities, .services .rooms, .messages .enquiries, .contact-us .contact, .more_info .find_us, .more_info .reviews, .more_info .references {
+  height: 20vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#homepage .services .activities h3:hover, #homepage .services .rooms h3:hover, #homepage .more_info .find_us h3:hover, #reservation_step_1 .submit_button_reservation_step_1 a:hover, #reservation_step_2 .submit_button_reservation_step_2 a:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.services .activities h3, .more_info .find_us h3 {
+  right: 10vw;
+  transition: 0.3s;
+}
+
+.messages .enquiries h3 {
+  top: 7.5vh;
+  left: 32.5vw;
+}
+
+.services .rooms h3, .more_info .reviews h3 {
+  left: 10vw;
+  transition: 0.3s;
+}
+
+.references h3 {
+  left: 27.5vw;
+  transition: 0.3s;
+}
+
+.services .activities {
+  background-image: url(../images/0-activities-quad-biking.jpg);
+}
+
+.more_info .find_us {
+  background-image: url(../images/volcano-find-us-homepage-background.jpg);
+}
+
+.messages .enquiries {
+  background-image: url(../images/volcano-enquiry-background.jpg);
+}
+
+.contact-us .contact {
+  background-image: url(../images/volcano-find-us-background.jpg);
+}
+
+.services .rooms {
+  background-image: url(../images/0-rooms-hammock.jpg);
+}
+
+.more_info .reviews, .more_info .references {
+  background-image: url(../images/volcano-review-homepage-background.jpg);
+}
+
+/* activitiy section of SERVICES*/
+#homepage .services .activity2, #homepage .services .room2, #homepage .more_info .additional_icons {
+  display: none;
+}
+
+#activities_only_home figure img, #rooms_only_home figure img, #activities_only img, #rooms_only img {
+  padding: 2vh 0;
+  max-width: 100%;
+  max-height: 80%;
+}
+
+/*FIND US section*/
+#find_us .to_find_us {
+  background-color: #475429;
+  color: white;
+  border-radius: 1em;
+}
+
+#find_us nav.book_message_option h4 {
+  text-align: left;
+}
+
+/* for references indentation */
+#references_only p {
+  padding-left: 10vh;
+  text-indent: -10vh;;
+}
+
+/*set icon size for whole page*/
+.ship_ferry_directions a em {
+  font-size: 5vh;
+}
+
+/*Below is specifically for FIND_US.html*/
+/*==============================================*/
+iframe {
+  padding: 1vh 0;
+  height: 45vh;
+}
+
+#points_direction {
+  padding-top: 2vh;
+}
+
+#points_direction em {
+  font-size: 2em;
+}
+
+.ship_ferry_directions .ship_directions, .ship_ferry_directions .plane_directions {
+  width: 40%;
+  text-align: center;
+  padding: 1vh 0;
+  transition: linear 0.3s;
+}
+
+#points_direction #ship_dir, #points_direction #plane_dir {
+  padding: 1vh 2vw;
+}
+
+.js #points_direction .highlight_clicked {
+  border: black solid 5px;
+  border-radius: 1em;
+  background-color:  #aadaff;
+  display: block;
+  padding: 1vh 2vw;
+  transform: scaleX(1.1);
+}
+
+/* if Javascript doesn't work, this will happen instead */
+.ship_ferry_directions, .js .directions_for_plane, .js .directions_for_ship {
+  display: none;
+}
+
+#points_direction figure img, #homepage .more_info figure img {
+  max-height: 15%;
+  max-width: 15%;
+  border-radius: 2em;
+  border: 5px black solid;
+}
+
+.js .ship_ferry_directions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 2vh 0;
+}
+
+.plane_fallback, .ship_fallback {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ship_directions, .plane_directions, .js .more_information {
+  cursor: pointer;
+}
+
+.ship_directions:hover, .plane_directions:hover {
+  border: white solid 5px;
+  border-radius: 1em;
+  background-color:  #1c250c;
+  color: white;
+}
+
+.directions_for_plane li, .directions_for_ship li  {
+  list-style: none;
+  padding: 1vh 0;
+}
+
+.directions_for_plane h3, .directions_for_ship h3  {
+  padding-top: 2vh;
+}
+
+/* Message form */
+#contact-form fieldset input, #contact-form fieldset textarea ,#contact-form fieldset label {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  text-align: left;
+  font-weight: 900;
+}
+
+.form-item input, .form-item textarea {
+  border: black solid 3px;
+  border-radius: 0.25em;
+  box-shadow: rgba(0,0,0,0.5) 3px 3px 10px;
+}
+
+.form-item label {
+  display: block;
+  padding-bottom: 1vh;
+}
+
+#contact-form  {
+  background-image: radial-gradient(circle closest-side, white, #aadaff);
+  border: black solid 3px;
+  border-radius: 1em;
+
+}
+
+fieldset .form-item, #form p {
+  margin: 2vh;
+}
+
+#button button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  padding: 0.25em;
+  border-radius: 0.25em;
+  justify-content: flex-end;
+  background-color: white;
+  border: black solid 3px;
+  font-weight: 900;
+  box-shadow: rgba(0,0,0,0.5) 3px 3px 10px;
+  cursor: pointer;
+}
+
+#button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* this is for contact volcaeverest detail*/
+main #volca_details {
+  margin: 6vh 10vw;
+  padding: 2vh 1vw;
+}
+
+.contact-us section {
+  margin: 1vh 0 0 0;
+}
+
+.contact-us {
+  font-weight: 900  ;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.contact, #volca_details {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-us img {
+  position: absolute;
+  top: 27.5vh;
+  max-width: 100%;
+  max-height: auto;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/*Below is specifically for about_us.html*/
+/*==============================================*/
+#horizontal_indicator {
+  display: none;
+  height: 1vh;
+  background: white;
+  position: sticky;
+  top: 3vh;
+  margin: 0 12vw;
+  z-index: 2;
+  max-width: 75%;
+}
+
+#about_us_history h4 {
+  margin: 0 0 1vh 0;
+}
+
+/* sliding effect for all images and iframe in about_us webpage */
+.js #about_us_history iframe, .js #about_us_history figure {
+  transform: translateX(-180%);
+	transition: transform 1s ease;
+}
+
+.js #about_us_history iframe.image-sliding, .js #about_us_history figure.image-sliding {
+	transform: translateX(0%);
+}
+
+.the_beginning iframe {
+  margin: 2vh 0;
+  border-radius: 4em;
+}
+
+.the_beginning_part2 img, .the_beginning_part3 img, .the_beginning_part4 img {
+  margin: 2vh 0;
+  border-radius: 4em;
+  width: 100%;
+  height: 80%;
+}
+
+.the_beginning_part3 h5 {
+  margin-top: 2vh;
+  font-size: 1.05em;
+}
+
+/*Below is specifically for rooms_activities.html*/
+/*==============================================*/
+#rooms_activities #activities_only, #rooms_activities #rooms_only {
+  display: flex;
+  overflow-x: auto;
+}
+
+#rooms_activities #activities_only article, #rooms_activities #rooms_only article {
+  min-width: 80%;
+  min-height: 90%;
+}
+
+#rooms_activities #activities_only article > *, #rooms_activities #rooms_only article > * {
+  margin: 0 5vw;
+  padding: 1vh 0;
+}
+
+/* if spacings are even at the top and bottom - then white spacing looks unbalance for this section of the website */
+#activities_only, #rooms_only {
+  margin: 6vh 10vw 8vh 10vw;
+  padding: 2vh 0;
+}
+
+#activities_only::-webkit-scrollbar, #rooms_only::-webkit-scrollbar {
+  width: 1vw;
+}
+
+#activities_only::-webkit-scrollbar-track, #rooms_only::-webkit-scrollbar-track {
+  border-radius: 1em;
+}
+
+#activities_only::-webkit-scrollbar-thumb, #rooms_only::-webkit-scrollbar-thumb {
+  border-radius: 1em;
+  background-color: white;
+  border: black solid 1px;
+}
+
+/* More information collapse for rooms and activities */
+.more_information {
+  margin: 4vh 0 2vh 0;
+  display: flex;
+  justify-content: space-between;
+  justify-self: center;
+  transition: linear 0.3s;
+}
+
+#rooms_only h4, #activities_only h4, .more_information {
+  color: white;
+}
+
+.more_information em, .more_information h5 {
+  display: inline-block;
+  padding: 1vh;
+  font-size: 1em;
+}
+
+.more_information p {
+  font-weight: 900;
+}
+
+/* if Javascript is not working then just display more information content */
+.content_room2, .content_room3, .content_room1, .content_room4, .content_activity2, .content_activity3, .content_activity1, .content_activity4  {
+  display: block;
+  overflow: hidden;
+}
+
+.js .content_room2, .js .content_room3, .js .content_room1, .js .content_room4, .js .content_activity2, .js .content_activity3, .js .content_activity1, .js .content_activity4  {
+  display: none;
+  overflow: hidden;
+}
+
+/*Below is specifically for reservation_step_1*/
+/*==============================================*/
+/* when javascript doesn't work, confirmation part of website will not be useful, so get rid of it*/
+#reservation_step_1 #date_guest_num_confirmation {
+  display: none;
+}
+
+.js #reservation_step_1 #date_guest_num_confirmation {
+  display: block;
+}
+
+main#reservation_step_1 > *, main#reservation_step_2 > *, main#reservation_step_3 > * {
+  margin: 6vh 10vw;
+}
+
+form#reservation_dates_guests_step_1 legend, form#reservation_rooms_guests_step_2 legend {
+  margin-left: 2vw;
+  padding: 1vw;
+}
+
+form#reservation_dates_guests_step_1 legend, form#reservation_rooms_guests_step_2 legend, #reservation_step_1 .submit_button_reservation_step_1 a, #reservation_step_2 .submit_button_reservation_step_2 a {
+  color: white;
+  border-radius: 0.25em;
+  transition: 0.3s;
+}
+
+form#reservation_dates_guests_step_1 section, main#reservation_step_1 a, form#reservation_rooms_guests_step_2 section, main#reservation_step_2 a  {
+  padding: 0.5vh 1vw;
+}
+
+main#reservation_step_2 p {
+  padding-left: 1vw;
+}
+
+/* if javascript works - date validity will have already been checked */
+.js #reservation_dates_guests_step_1 p {
+  display: none
+}
+
+#reservation_dates_guests_step_1 p {
+  padding: 0 1.7vw;
+}
+
+main#reservation_step_1 .submit_button_reservation_step_1, main#reservation_step_2 .submit_button_reservation_step_2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+form#reservation_dates_guests_step_1 .manage_date, form#reservation_dates_guests_step_1 .manage_guest {
+  display: flex;
+  justify-items: center;
+  justify-content: space-evenly;
+  margin: 2vh 0 0 0;
+}
+
+form#reservation_dates_guests_step_1 .manage_date section {
+  width: 50%;
+}
+
+form#reservation_dates_guests_step_1 fieldset:nth-child(2), form#reservation_rooms_guests_step_2 fieldset:nth-child(2) {
+  margin: 4vh 0;
+}
+
+.step_1_header .booking, .step_2_header .booking, .step_3_header .booking {
+  height: 2vh;
+}
+
+#reservation_steps_indicator #progress_measure {
+  width: 100%;
+  height: 2vh;
+  border: 1px solid #1c250c;
+}
+
+/*Below is specifically for reservation_step_2*/
+/*==============================================*/
+.js .guest_4_form, .js .guest_3_form, .js .guest_2_form {
+  display: none;
+}
+
+.js .required {
+  display: block;
+}
+
+.js #reservation_step_2 p {
+  visibility: hidden;
+}
+
+form#reservation_rooms_guests_step_2 .manage_room section {
+  width: 100%;
+}
+
+form#reservation_rooms_guests_step_2 .manage_room {
+  margin: 2vh 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+form#reservation_rooms_guests_step_2 .guest_1, form#reservation_rooms_guests_step_2 .guest_2, form#reservation_rooms_guests_step_2 .guest_3, form#reservation_rooms_guests_step_2 .guest_4  {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+form#reservation_rooms_guests_step_2 .guest_1_form, form#reservation_rooms_guests_step_2 .guest_2_form, form#reservation_rooms_guests_step_2 .guest_3_form, form#reservation_rooms_guests_step_2 .guest_4_form {
+  margin: 2vh 0;
+}
+
+#reservation_steps_indicator #progress_measure .reservation_bar.step_1 {
+  background: #1c250c;
+  width: 33%;
+}
+
+/* these are for color indicators */
+#reservation_steps_indicator #progress_measure .reservation_bar {
+  height: 100%;
+}
+
+/* indicators gets updated as user finish reservation procedure */
+#reservation_step_1 #reservation_steps_indicator #progress_measure .reservation_bar.step_1 {
+  background: #1c250c;
+  width: 33%;
+}
+
+#reservation_step_2 #reservation_steps_indicator #progress_measure .reservation_bar.step_2 {
+  background: #1c250c;
+  width: 66%;
+}
+
+#reservation_step_3 #reservation_steps_indicator #progress_measure .reservation_bar.step_3 {
+  background: #1c250c;
+  width: 100%;
+}
+
+#reservation_steps_indicator .group_of_steps {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1vh;
+}
+
+form#reservation_dates_guests_step_1, main#reservation_step_1 a, main#reservation_step_2 a, form#reservation_rooms_guests_step_2, #reservation_step_3 p, option {
+  font-size: 1em;
+}
+
+form#reservation_dates_guests_step_1 input, form#reservation_dates_guests_step_1 option, form#reservation_dates_guests_step_1 .submit_button_reservation_step_2 a, form#reservation_rooms_guests_step_2 input, form#reservation_rooms_guests_step_2 option {
+  font-family: 'Roboto', sans-serif;
+}
+
+.reservation_dates_guests_step_1 .submit_button_reservation_step_1 {
+  display: flex;
+
+}
+
+/* Javascript related functionalities */
+/* When reservation button is clicked */
+#reservation_date_occupancy .close-button a {
+  font-size: 1.5em;
+  color: white;
+  background: #1c250c;
+  padding: 0 0.5em;
+  border-radius: 0.25em;
+  transition: 0.5s;
+}
+
+#reservation_date_occupancy .close-button a:hover {
+  border-radius: 1em;
+}
+
+#reservation_date_occupancy .close-button {
+  margin-bottom: 1vh;
+}
+
+.js #reservation_date_occupancy p {
+  visibility: hidden;
+}
+
+#reservation_date_occupancy .arrival p.error_found, #reservation_date_occupancy .departure p.error_found,
+#reservation_date_occupancy .occupancy p.error_found, #reservation_date_occupancy .arrival input.error_found, #reservation_date_occupancy .departure input.error_found, #reservation_rooms_guests_step_2 .manage_room p.error_found,
+#reservation_rooms_guests_step_2 .error_found p
+ {
+  color: darkred;
+  font-weight: 900;
+  visibility: visible;
+}
+
+#reservation_date_occupancy .arrival input.error_found, #reservation_date_occupancy .departure input.error_found, #reservation_date_occupancy .adult_guest select.error_found, #reservation_date_occupancy .kids_guest select.error_found, #reservation_rooms_guests_step_2 .manage_room select.error_found, #reservation_rooms_guests_step_2 .error_found input, #reservation_rooms_guests_step_2 .error_found input::placeholder
+ {
+  border-color: darkred;
+  color: darkred;
+}
+
+#reservation_date_occupancy {
+  border: black solid 3px;
+  border-radius: 1em;
+}
+
+#reservation_date_occupancy .reservation_list:nth-child(1) {
+  padding: 2vh 0;
+}
+
+#reservation_date_occupancy .reservation_list > * {
+  padding: 0 4vw;
+}
+
+#reservation_date_occupancy .submit_button_reservation_start {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0 4vw;
+}
+
+#reservation_date_occupancy .submit_button_reservation_start a:hover {
+  padding: 1em;
+}
+
+#reservation_date_occupancy .submit_button_reservation_start a, 
+#reservation_date_occupancy h3 {
+  display: block;
+  width: 100%;
+  padding: 0.25em;
+  border-radius: 0.25em;
+  color: white;
+  transition: 0.3s;
+}
+
+#reservation_date_occupancy .dates_occupancy > :nth-child(-n+4) {
+  margin-bottom: 3vh;
+}
+
+#reservation_date_occupancy .dates_occupancy h3, #reservation_date_occupancy .submit_button_reservation_start a, 
+#reservation_date_occupancy h3 {
+  font-size: 1em;
+}
+
+#arrival_date_value, #departure_date_value, select#adult_number, select#kids_number, #first_name, #last_name, #email_address, #origin_country_from, #guest_contact_num {
+  display: block;
+  width: 100%;
+  font-size: 0.8em;
+  border: solid black 1px;
+  margin: 1vh 0;
+}
+
+#reservation_step_2 .manage_room label  {
+  display: inline-block;
+  width: 50%;
+}
+
+#reservation_step_2 .manage_room select  {
+  display: inline-block;
+  width: 45%;
+  font-size: 0.8em;
+  border: solid black 1px;
+  margin: 1vh 0;
+}
+
+.guest_first_name, .guest_last_name, .email, .country, .contact_num {
+  width: 45%;
+  margin: 1vh 0;
+}
+
+#reservation_step_1 .adult_guest, #reservation_step_1 .kids_guest {
+  width: 100%;
+}
+
+#reservation_date_occupancy .adult_guest, #reservation_date_occupancy .kids_guest {
+  width: 45%;
+}
+
+#reservation_date_occupancy .num_occupancy {
+  display: flex;
+  justify-content: space-between;
+}
+
+#reservation_date_occupancy {
+  position: fixed;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	background: white;
+  width: 50%;
+  max-width: 600px;
+	height: 65%;
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+	visibility: hidden;
+  opacity: 0;
+}
+
+/* FOR HEADINGS */
+main#reservation_step_1 #date_guest_num_confirmation h4 {
+  text-align: left;
+  padding: 1vh 0;
+}
+
+body.reservation_commence {
+  overflow: hidden; /* temporaily disables page scrolling */
+  background-color: rgba(169,169,169);
+}
+
+body.reservation_commence #reservation_date_occupancy {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* resize content whenever size of window bigger than 600px and smaller than 1100px */
+@media only screen and (min-width: 600px) and (max-width: 1100px) {
+
+  header li, footer li {
+    padding: 2.5vh 3vw;
+  }
+
+  /* headings */
+h1 {
+  font-size: 3em;
+  padding-bottom: 5vh;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.9em;
+}
+
+h5 {
+  font-size: 1.8em;
+}
+
+#page-header, #page-footer, #main-menu-dropdown {
+  font-size: 1.2em;
+}
+
+/* controls height of image in header */
+#page-header .bottom_half_header {
+  height: 70vh;
+}
+
+p {
+  line-height: 4vh;
+}
+
+p, #points_direction li, button {
+  font-size: 1.4em;
+}
+
+#reservation_date_occupancy p ,#reservation_date_occupancy p.error_found {
+  font-size: 1em;
+}
+
+main#homepage article, main#find_us article, main #form, #rooms_activities #rooms_activities article.things_we_have, .explore_activities_details, main#about_us_history article, main#activities_only_home article, main#find_us_only article {
+  margin: 12vh 10vw;
+}
+
+.more_information em, .more_information h5 {
+  font-size: 1.9em;
+}
+
+.services .activities, .services .rooms, .messages .enquiries, .contact-us .contact, .more_info .find_us, .more_info .reviews, .more_info .references {
+  height: 35vh;
+}
+
+.services .activities h3, .more_info .find_us h3 {
+  right: 15vw;
+  bottom: 15vh;
+}
+
+.messages .enquiries h3 {
+  top: 15vh;
+  left: 38vw;
+}
+
+.services .rooms h3, .more_info .reviews h3 {
+  left: 15vw;
+  bottom: 15vh;
+}
+
+.references h3 {
+  left: 30vw;
+  bottom: 15vh;
+}
+
+.contact-us h3 {
+  bottom: 15vh;
+  left: 35vw;
+}
+
+button {
+  font-size: 1.5em;
+}
+
+form#reservation_dates_guests_step_1, main#reservation_step_1 a, main#reservation_step_2 a, form#reservation_rooms_guests_step_2, #reservation_step_3 p, option {
+  font-size: 1.4em;
+}
+
+#arrival_date_value, #departure_date_value, select#adult_number, select#kids_number, #first_name, #last_name, #email_address, #origin_country_from, #guest_contact_num, #reservation_step_2 .manage_room select {
+  font-size: 1.4em;
+}
+
+#reservation_date_occupancy {
+  height: 77%;
+}
+}
+
+/* resize content different after it passes the 1100px mark */
+@media only screen and (min-width: 1100px) {
+  /* changes arrangement of content to row like positioning rather than column in homepage */
+  #homepage #introduction, #homepage #activities_only_home, #homepage #rooms_only_home, #homepage .find_us_content, #homepage #reviews_only {
+    display: flex;
+  }
+
+  #homepage .find_us_content .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #homepage .find_us_content .content {
+    height: 50vh;
+  }
+
+  #homepage .more_info figure img {
+    max-height: 40%;
+    max-width: 40%;
+  }
+
+  #homepage .find_us_content .additional_icons {
+    width: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #homepage .find_us_content .additional_icons .ship_fallback img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  #homepage .find_us_content .additional_icons .plane_fallback  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  #homepage .ship_fallback img {
+    animation-name: ship-moves;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1); 
+    transition-duration: 0.8s;
+    transition-property: transform;
+  }
+
+  #homepage .plane_fallback img {
+    animation-name: plane-moves;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    transition-duration: 0.8s;
+    transition-property: transform;
+  }
+  
+  @keyframes ship-moves {
+    50% {
+      right: 50%;
+      bottom: 60%;
+    }
+  }
+
+  @keyframes plane-moves {
+    50% {
+      top: 60%;
+      right: 50%;
+    }
+  }
+
+  #homepage .services .activity2, #homepage .services .room2 {
+    display: block;
+  }
+
+  .more_information em, .more_information h5 {
+    font-size: 1.6em;
+  }
+
+  #rooms_activities #activities_only article, #rooms_activities #rooms_only article {
+    min-width: 50%;
+    min-height: 50%;
+  }
+
+  #activities_only_home figure img, #rooms_only_home figure img{
+    max-width: 50%;
+    max-height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .the_beginning_part2 img, .the_beginning_part3 img, .the_beginning_part4 img {
+    border-radius: 4em;
+    max-width: 50%;
+    max-height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2vw;
+  }
+
+  .the_beginning_part3 img, .the_beginning iframe {
+    float: right;
+  }
+  
+  .the_beginning_part2 img, .the_beginning_part4 img {
+    float: left;
+  }
+
+  .bottom_half_header em {
+    font-size: 4vw;
+    padding: 4vh;
+  }
+
+  /* headings */
+  h1 {
+    font-size: 3em;
+    padding-bottom: 5vh;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  h4 {
+    font-size: 1.6em;
+  }
+
+  h5 {
+    font-size: 1.5em;
+  }
+
+  #page-header, #page-footer, #main-menu-dropdown {
+    font-size: 1.2em;
+  }
+
+  /* controls height of image in header */
+  #page-header .bottom_half_header {
+    height: 85.5vh;
+  }
+
+  p {
+    line-height: 4vh;
+  }
+
+  p, #points_direction li, button {
+    font-size: 1.2em;
+  }
+
+  main#homepage article, main#find_us article, main #form, #rooms_activities #rooms_activities article.things_we_have, .explore_activities_details, main#about_us_history article, main#activities_only_home article, main#find_us_only article {
+    margin: 12vh 10vw;
+  }
+
+  .services .activities, .services .rooms, .more_info .find_us, .more_info .reviews, .messages .enquiries, .contact-us .contact, .more_info .references {
+    height: 35vh;
+  }
+
+  .services .activities h3, .more_info .find_us h3 {
+    right: 15vw;
+    bottom: 15vh;
+  }
+
+  .messages .enquiries h3 {
+    top: 15vh;
+    left: 38vw;
+  }
+
+  .services .rooms h3, .more_info .reviews h3 {
+    left: 15vw;
+    bottom: 15vh;
+  }
+
+  .references h3 {
+    left: 40vw;
+    bottom: 15vh;
+  }
+
+  .contact-us h3 {
+    bottom: 15vh;
+    left: 35vw;
+  }
+
+  button {
+    font-size: 1.5em;
+  }
+
+  form#reservation_dates_guests_step_1, main#reservation_step_1 a, main#reservation_step_2 a, form#reservation_rooms_guests_step_2, #reservation_step_3 p, option {
+    font-size: 1.4em;
+  }
+
+  #arrival_date_value, #departure_date_value, select#adult_number, select#kids_number, #first_name, #last_name, #email_address, #origin_country_from, #guest_contact_num, #reservation_step_2 .manage_room select {
+    font-size: 1.4em;
+  }
+
+  #reservation_date_occupancy {
+    height: 77.5%;
+  }
+}
+
+
+
+
+
+
+
+
+

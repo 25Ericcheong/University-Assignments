@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>It is very easy to find us, so come join us! VOLCAEVEREST</title>
+    <!-- the 2 following link tags are font families used in the website from google api -->
+    <!-- this is for content -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- this is for headers or titles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <nav id="main-menu-dropdown">
+      <button class="drop_button">
+        <em>&#9776</em>
+      </button>
+      <ul class="dropdown-list" id="hamburger_dropdown">
+        <li>
+          <a href="homepage.html">HOME</a>
+        </li>
+        <li>
+          <a href="about_us.html">ABOUT US</a>
+        </li>
+        <li>
+          <a href="find_us.html" class="current">FIND US</a>
+        </li>
+        <li>
+          <a href="rooms_activities.html">ROOMS & ACTIVITIES</a>
+        </li>
+      </ul>
+      <button class="home_button">
+        <a href="homepage.html"><em class='fas fa-mountain'></em></a>
+      </button>
+    </nav>
+    <header id="page-header">
+      <section id="find_us_background" class="bottom_half_header">
+        <a href="homepage.html"><em class='fas fa-mountain'></em></a>
+        <h1>VOLCAEVEREST</h1>
+        <h2 class="header"><strong>FIND US</strong></h2>
+        <h2 class="header">Get to Us! Either by Ferry or Plane!</h2>
+      </section>
+      <nav class="booking">
+        <a href="reservation_step_1.html"><strong>RESERVATION</strong></a>
+      </nav>
+      <form id="reservation_date_occupancy" class="reservation_commence">
+        <fieldset class="reservation_list">
+          <section class="button_reservation">
+            <nav class="close-button">
+              <a href="homepage.html">&times;</a>
+            </nav>
+          </section>
+          <section class="dates_occupancy">
+            <h3>RESERVATION</h3>
+            <section class="arrival">
+              <label for="arrival_date">ARRIVAL</label>
+              <input type="date" id="arrival_date_value" name="guest_arrival_date">
+              <p>Valid arrival date required</p>
+            </section>
+            <section class="departure">
+              <label for="departure _date">DEPARTURE</label>
+              <input type="date" id="departure_date_value" name="guest_departure_date">
+              <p>Valid departure date required</p>
+            </section>
+            <section class="occupancy">
+              <section class="num_occupancy">
+                <section class="adult_guest">
+                  <label for="adult_guess_form">ADULTS</label>
+                  <select id="adult_number" name="adult_number">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+                </section>
+                <section class="kids_guest">
+                  <label for="kids_guess_form">TEENS</label>
+                  <select id="kids_number" name="kids_number">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+                </section>
+              </section>
+              <p>Total Guest number can't be 0</p>
+            </section>
+          </section>
+          <section class=submit_button_reservation_start>
+            <a href="find_us.html">CHECK AVAILABILITY</a>
+          </section>
+        </fieldset>
+      </form>
+    </header>
+
+    <main id="find_us">
+      <article class="finding_us">
+        <section>
+          <h3>Finding Us</h3>
+          <iframe data-scroll-class="image-sliding" class="image-slide" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d209937.15671104554!2d153.34418951597962!3d-27.111522376605482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x6b93c8b7d02c0e4f%3A0x89f618fcac9af6e4!2sMoreton%20Island%2C%20Queensland%204025!3m2!1d-27.1393858!2d153.40362869999998!5e0!3m2!1sen!2sau!4v1589261760151!5m2!1sen!2sau" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" alt="This is a google map for users to understand the multiple ways of reaching Volcaeverest"></iframe>
+          <p>Yes. It really is that easy to reach us! However, guests should know that there are 2 ways to get here via ferry or plane.</p>
+        </section>
+        <section id="points_direction">
+          <section class=ship_ferry_directions>
+            <section id="ship_dir" class='ship_directions highlight_clicked'>
+              <em class='fas fa-ship'></em>
+            </section>
+            <section id="plane_dir" class='plane_directions'>
+              <em class='fas fa-plane'></em>
+            </section>
+          </section>
+          <section id="instruction_list">
+            <section id="for_plane" class="directions_for_plane">
+              <h3 class='plane_direction_header'>Directions via Plane</h3>
+              <figure class='plane_fallback'>
+                <img src="images/icon/plane-icon.jpg">
+              </figure>
+              <ol>
+                <li class='step_1'>Ensure ticket bought takes you to Volcaeverest, the flight time should take around 2 hours to get to your destination</li>
+                <li class='step_2'>Upon arrival look for the Volcaeverest counter and book a ride. Once that is done, let our friendly staff brief you</li>
+                <li class='step_3'>Now, just sit back and relax and be prepared! Or ask our friendly staff about the resort or the island!</li>
+              </ol>
+            </section>
+            <section id="for_ship" class="directions_for_ship highlight_clicked">
+              <h3 class='ship_direction_header'>Directions via Ferry</h3>
+              <figure class='ship_fallback'>
+                <img src='images/icon/ship-icon.jpg'>
+              </figure>
+              <ol>
+                <li class='step_1'>Locate a booking counter that belongs to Volcaeverest. It should be located at the first row of counters, you can verify the counter by locating our resort name and staff number</li>
+                <li class='step_2'>Upon arrival, have a chat with our personnel at the counter to book a ride and make sure to get a ticket back home as well as the waves tend to be unpredictable, you may want to be notify if such an event were to occur</li>
+                <li class='step_3'>Now, you can either sit back and relax or enjoy the beautiful scenery as you drive through the island</li>
+              </ol>
+            </section>
+          </section>
+        </section>
+      </article>
+
+      <section class="messages">
+        <section>
+          <section class="enquiries">
+            <h3>ENQUIRIES</h3>
+          </section>
+          <section id="form">
+            <h4>Leave a Message</h4>
+            <p>If you are still unsure, please leave a message and we will get back to you</p>
+            <form id="contact-form">
+              <fieldset>
+                <section class="form-item">
+                  <label for="form-full-name">Name:</label>
+                  <section class="form-element">
+                    <input type="text" name="full_name" id="form-full-name" placeholder="Full name">
+                  </section>
+                </section>
+
+                <section class="form-item">
+                  <label for="form-email">Email:</label>
+                  <section class="form-element">
+                    <input type="text" name="email" id="form-email" placeholder="Insert valid email address">
+                  </section>
+                </section>
+
+                <section class="form-item">
+                  <label for="form-message">Message:</label>
+                  <section class="form-element">
+                    <textarea id="form-message" name="user-message" rows="10" placeholder="Leave your message here"></textarea>
+                  </section>
+                </section>
+                <p>Please ensure all field is filled and insert a valid email to allow us to contact you</p>
+                <section id="button" class="form-item">
+                  <button type="submit">Submit</button>
+                </section>
+              </fieldset>
+            </form>
+          </section>
+        </section>
+      </section>
+
+      <section class="contact-us">
+        <img src="images/volcano-contact-detail-background.jpg">
+        <section>
+          <section class="contact">
+            <h3>CONTACT US</h3>
+          </section>
+          <section id="volca_details">
+            <h4>Volcaeverest<br><em class='fas fa-mountain'></em></h4>
+            <section class="address">
+              <h5>Address</h5>
+              <p>270 Volcaeverest, Langkawai Island, Papua New Guinea 439-123</p>
+            </section>
+            <section class="phone">
+              <h5>Phone</h5>
+              <p>+0543098567</p>
+            </section>
+            <section class="email">
+              <h5>Email</h5>
+              <p>inquiry@volcaeverest.com</p>
+            </section>
+          </section>
+        </section>
+      </section>
+
+    </main>
+    <footer id="page-footer">
+      <nav id="secondary-menu">
+        <ul class="footer-list">
+          <li>
+            <a href="homepage.html">HOME</a>
+          </li>
+          <li>
+            <a href="homepage.html"><em class='fas fa-mountain'></em></a>
+          </li>
+          <li>
+            <a href="find_us.html">FIND US</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.cycle2.min.js"></script>
+    <script src=js/scrollClass.js></script>
+		<script src="js/script.js"></script>
+  </body>
+</html>

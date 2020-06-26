@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>A variety of rooms and activities, come look! VOLCAEVEREST</title>
+    <!-- the 2 following link tags are font families used in the website from google api -->
+    <!-- this is for content -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- this is for headers or titles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body id="rooms_activities">
+    <nav id="main-menu-dropdown">
+      <button class="drop_button">
+        <em>&#9776</em>
+      </button>
+      <ul class="dropdown-list" id="hamburger_dropdown">
+        <li>
+          <a href="homepage.html">HOME</a>
+        </li>
+        <li>
+          <a href="about_us.html">ABOUT US</a>
+        </li>
+        <li>
+          <a href="find_us.html">FIND US</a>
+        </li>
+        <li>
+          <a href="rooms_activities.html" class="current">ROOMS & ACTIVITIES</a>
+        </li>
+      </ul>
+      <button class="home_button">
+        <a href="homepage.html"><em class='fas fa-mountain'></em></a>
+      </button>
+    </nav>
+    <header id="page-header">
+      <section id="rooms_activities_background" class="bottom_half_header">
+        <a href="homepage.html"><em class='fas fa-mountain'></em></a>
+        <h1>VOLCAEVEREST</h1>
+        <h2 class="header"><strong>ROOMS & ACTIVITIES</strong></h2>
+        <h2 class="header">Be at peace with nature and <strong>thrilled</strong> at the same time</h2>
+      </section>
+      <nav class="booking">
+        <a href="reservation_step_1.html"><strong>RESERVATION</strong></a>
+      </nav>
+      <form id="reservation_date_occupancy" class="reservation_commence">
+        <fieldset class="reservation_list">
+          <section class="button_reservation">
+            <nav class="close-button">
+              <a href="rooms_activities.html">&times;</a>
+            </nav>
+          </section>
+          <section class="dates_occupancy">
+            <h3>RESERVATION</h3>
+            <section class="arrival">
+              <label for="arrival_date">ARRIVAL</label>
+              <input type="date" id="arrival_date_value" name="guest_arrival_date">
+              <p>Valid arrival date required</p>
+            </section>
+            <section class="departure">
+              <label for="departure _date">DEPARTURE</label>
+              <input type="date" id="departure_date_value" name="guest_departure_date">
+              <p>Valid departure date required</p>
+            </section>
+            <section class="occupancy">
+              <section class="num_occupancy">
+                <section class="adult_guest">
+                  <label for="adult_guess_form">ADULTS</label>
+                  <select id="adult_number" name="adult_number">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+                </section>
+                <section class="kids_guest">
+                  <label for="kids_guess_form">TEENS</label>
+                  <select id="kids_number" name="kids_number">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+                </section>
+              </section>
+              <p>Total Guest number can't be 0</p>
+            </section>
+          </section>
+          <section class=submit_button_reservation_start>
+            <a href="reservation_step_1.html">CHECK AVAILABILITY</a>
+          </section>
+        </fieldset>
+      </form>
+    </header>
+
+    <main id="rooms_activities">
+      <article class="things_we_have">
+        <h3>Rooms & Activities</h3>
+        <p>From facing lava while sleeping to taking an unforgettable experience while paragliding around the mountain. We have it all! We offer 4 kinds of room and an abundance of thrilling activities for everyone</p>
+      </article>
+
+      <section class="services">
+        <section>
+          <section class="activities">
+            <h3>ACTIVITIES</h3>
+          </section>
+          <section id="activities_only">
+            <article class="activity1">
+              <h4>Magma Jumping</h4>
+              <figure>
+                <img src="images/1-activities-bungee.jpg" alt="Very own unique bungee magma jumping where you jump towards the core of the volcanic mountain">
+              </figure>
+              <section>
+                <p>Looking for some heat and excitement at the same time? This is the perfect activity for you! Thrilling, fast, and free (fall)! You can't find this anywhere else in the world!</p>
+              </section>
+              <section>
+                <section id="activity1_info" class="more_information">
+                  <h5>More Info</h5>
+                  <em class="fa fa-plus" aria-hidden="true"></em>
+                </section>
+                <section class="content_activity1">
+                  <p>This is one of our very first and most unique activities (that is not to say that the rest of the activities are boring or any less exciting) as it recently became our very own trademark! No other resort has such an activity as no other resort in the world has its' facilities located on the tip of the volcanic mountain so don't be afraid and take the fall and see the core of the volcano with your very own eyes!</p>
+                </section>
+              </section>
+            </article>
+            <article class="activity2">
+              <h4>Quad Lava Biking</h4>
+              <figure>
+                <img src="images/2-activities-quad-bike.jpg" alt="Quad biking down the mountain with magma flowing right next to you">
+              </figure>
+              <section>
+                <p>Imagine taking a fully powered quad bike on a ride while having magma right by your side. It doesn't get much more thrilling and hot (quite literally) than this!</p>
+              </section>
+              <section>
+                <section id="activity2_info" class="more_information">
+                  <h5>More Info</h5>
+                  <em class="fa fa-plus" aria-hidden="true"></em>
+                </section>
+                <section class="content_activity2">
+                  <p>Want to ride instead of fall? Why not! We have our very own special insulated powoered quad bike that you could use and have a cruise around the mountain while having magma all around you. Feel the breeze (and the heat of course) while going fast around the mountain and enjoying what nature has to offer!</p>
+                </section>
+              </section>
+            </article>
+            <article class="activity3">
+              <h4>Lava Gliding</h4>
+              <figure>
+                <img src="images/3-activities-paragliding.jpg" alt="Paraglide around the volcanic mountain and have a look at the beautiful scenery">
+              </figure>
+              <section>
+                <p>Enjoy the view of nature from up and above and paraglide as high or as low as you desire with our very own powered electronic paraglide machine</p>
+              </section>
+              <section>
+                <section id="activity3_info" class="more_information">
+                  <h5>More Info</h5>
+                  <em class="fa fa-plus" aria-hidden="true"></em>
+                </section>
+                <section class="content_activity3">
+                  <p>This is the activity for you to get the perfect view of our volcanic mountain. This is definitely an experience that is entirely different to the rest of our activities as you will really be amazed by the beauty of the sorroundings and the mountain. Do not be afraid as you will be accompanied by one of our friendly staff as well who will be very well versed with the island. This gives you the opportunity to have a tour in the skies. An opportunity to not miss for sure!</p>
+                </section>
+              </section>
+            </article>
+            <article class="activity4">
+              <h4>Volcano Boarding</h4>
+              <figure>
+                <img src="images/4-activities-volcano-boarding.jpg" alt="Sand boardinng is nothing like volcano boarding, this is an image that showcases someone volcano boarding down the mountain">
+              </figure>
+              <section>
+                <p>Do you love sand and heat as much as us? Volcano board with us and experience them both at the same time. Experience magma on the way down!</p>
+              </section>
+              <section>
+                <section id="activity4_info" class="more_information">
+                  <h5>More Info</h5>
+                  <em class="fa fa-plus" aria-hidden="true"></em>
+                </section>
+                <section class="content_activity4">
+                  <p>It is certain that sand boarding is a thiing in the desert. But have you attempted volcano boarding? With our very son special insulated board and suit - you will get to experience it! Surf the magma as the locals would call it. Physically feel what magma is with our suit and tell everyone that you have been surfing by the volcanoes with the magma!</p>
+                </section>
+              </section>
+            </article>
+          </section>
+        </section>
+        <section>
+          <section class="rooms">
+            <h3>ROOMS</h3>
+          </section>
+          <section id="rooms_only">
+            <article class="room1">
+              <h4>Lava Simplicity</h4>
+              <figure>
+                <img src="images/1-rooms.jpg" alt="Our very own casual room for anyone who wants to relax">
+              </figure>
+              <section>
+                <p>Would you want to wake up to the scene of flowing lava while on your bed? Look no further and look at our very own unique - Relaxing Lava Simplicity</p>
+              </section>
+              <section>
+                <section id="room1_info" class="more_information">
+                  <h5>More Info</h5>
+                  <em class="fa fa-plus" aria-hidden="true"></em>
+                </section>
+                <section class="content_room1">
+                  <p>This is a room designed by the owners of the resort and they take pride in what they have designed and incorporate into the infrastructure of the resort. Its' unique feature that allows guests to sleep with lava flowing gives guests the experience as though they are swimming is a must for anyone staying with us for the first time. It is entirely safe proof and the walls are very well insulated which guarantees everyone's safety so don't be afraid and try this room!</p>
+                </section>
+              </section>
+            </article>
+            <article class="room2">
+              <h4>Volcanic Lasting</h4>
+              <figure>
+                <img src="images/0-rooms-hammock.jpg" alt="This room is right next to the volcano and you will surely feel the heat!">
+              </figure>
+              <section>
+                <p>Relax and be as close as possible as you can be to the flowing magma! You can be one with nature and experience real magma as well</p>
+              </section>
+              <section>
+                <section id="room2_info" class="more_information">
+                  <h5>More Info</h5>
+                  <em class="fa fa-plus" aria-hidden="true"></em>
+                </section>
+                <section class="content_room2">
+                  <p>What if you do not want to be separated by a wall and you prefer to feel the heat directly? Say no more! This is THE room to be in. An experience that is similar to glamping but with TONES of magma around you. With the strategic placement of our resort, it allows you to be comfortable enough to be close to magma and still sleep and enjoy nature</p>
+                </section>
+              </section>
+            </article>
+            <article class="room3">
+              <h4>Magmatastic</h4>
+              <figure>
+                <img src="images/2-rooms.jpg" alt="A room that is close to magma and nature at the same one - an experience to never forget">
+              </figure>
+              <section>
+                <p>Ever want to wake up to the volcanic mountain and be one with the nature? If the answer is yes - this is the room for you</p>
+              </section>
+              <section>
+                <section id="room3_info" class="more_information">
+                  <h5>More Info</h5>
+                  <em class="fa fa-plus" aria-hidden="true"></em>
+                </section>
+                <section class="content_room3">
+                  <p>If you truly enjoy magma and would want to be as close as possible to the core of the volcanic mountain. This is it. You get to stay in the mountain itself and listen to magma flowing around you. It is calming and relaxing and it makes you be more appreciative of what nature has. It would feel like you are living in an iglo but you are most definitely living in an iglo made of magma</p>
+                </section>
+              </section>
+            </article>
+            <article class="room4">
+              <h4>Lava Forever</h4>
+              <figure>
+                <img src="images/3-rooms.jpg" alt="Aa casual room for everyone to relax in">
+              </figure>
+              <section>
+                <p>Looking for something more casual? We have all kinds of room for you and this is inclusive of that. Contact us for more information on this</p>
+              </section>
+              <section>
+                <section id="room4_info" class="more_information">
+                  <h5>More Info</h5>
+                  <em class="fa fa-plus" aria-hidden="true"></em>
+                </section>
+                <section class="content_room4">
+                  <p>Feeling tired and prefer a casual room? We have it all but remember, this room is not JUST a casual room as you would wake up to the scenery of the volcanic mountain. You would wake up directly towards it and it almost feels like you can touch the volcanic mountain. An experience to record and remember for sure.</p>
+                </section>
+              </section>
+            </article>
+          </section>
+        </section>
+      </section>
+
+    </main>
+    <footer id="page-footer">
+      <nav id="secondary-menu">
+        <ul class="footer-list">
+          <li>
+            <a href="homepage.html">HOME</a>
+          </li>
+          <li>
+            <a href="homepage.html"><em class='fas fa-mountain'></em></a>
+          </li>
+          <li>
+            <a href="find_us.html">FIND US</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.cycle2.min.js"></script>
+    <script src=js/scrollClass.js></script>
+		<script src="js/script.js"></script>
+  </body>
+</html>
