@@ -12,4 +12,4 @@ Users will be able to keep track of their score, save their game, load a differe
 (changes the look of the game and excludes some of the functionalities that comes with the game)
 
 3) Cloud Computing Project
-Performed analysis on dataset acquired from Kaggle and stored dataset with the use of distributed file system (Apache Hadoop). Analysis process was done with the heelp of Spark clusters with the use of Spark programming techniques and Spark built-in libraries. Finally, all results were then visualized with the use of Jupyter Notebook and is deployed with the use of Google Cloud Computing (GCP). 
+Performed analysis on dataset acquired from Kaggle and stored dataset with the use of distributed file system (Apache Hadoop). Processing was achieved with the help of Spark clusters and Spark programming techniques and Spark built-in libraries. Finally, all results were then visualized with the use of Jupyter Notebook and is deployed with the use of Google Cloud Computing (GCP). 
