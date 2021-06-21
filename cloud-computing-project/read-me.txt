@@ -1,0 +1,18 @@
+Just a note that there are 2 notebooks - script.ipynb and script-mlib.ipynb.
+script.ipynb notebook consist of models from sklearn (which was wrong but has more information i feel)
+whereas script-mlib.ipynb consists of models from spark (it has all the models that i wanted to test but I couldn't evaluate the model with
+hypertuned parameters - but it should work and it will display additional information which i think is interesting. I had to code the whole thing again on the 
+day that it was due - if i could i would have added more analysis + information but i wanted to submit something than nothing.)
+
+Before going into the name node container, please upload file to gcp. This file must have the same file structure as uploaded onto
+blackboard. After uploading the file, type the following command
+
+docker-compose -f docker-compose_hdfs_spark.yml up -d
+
+After that, visit http://IP_ADDRESS:8888 and you should be able to find the script that contains the code
+Before running the code, please execute the commands below.
+
+Get into name node container
+sudo docker exec -it namenode bash
+
+hdfs dfs -put /home/nbs/dataset/satisfaction.csv /satisfaction.csv
